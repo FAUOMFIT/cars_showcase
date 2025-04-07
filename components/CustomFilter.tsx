@@ -1,9 +1,14 @@
-import React from 'react'
-
-const CustomFilter = () => {
-  return (
-    <div>CustomFilter</div>
-  )
+interface CustomFilterProps {
+  title: string;
 }
 
-export default CustomFilter
+const CustomFilter = ({ title }: CustomFilterProps) => {
+  return (
+    <div>
+      <h3>{title}</h3>
+      {/* Add your filter UI here */}
+    </div>
+  );
+};
+
+export default CustomFilter;
