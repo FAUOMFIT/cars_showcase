@@ -42,8 +42,8 @@ const SearchManufacturer = ({manufacturer, setManufacturer}: SearchManufacturerP
 
         <Transition
           as={Fragment}
-          Leave="transition ease-in duration-100"
-          LeaveFrom="opacity-0"
+          leave="transition ease-in duration-100"
+          leaveFrom="opacity-0"
           afterLeave={() => setQuery('')}
           >
             <Combobox.Options>
